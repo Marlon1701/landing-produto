@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <script src="index.js"></script>
     <title>Produtos</title>
 </head>
 <body>
@@ -18,14 +19,14 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="">Início</a></li>
-                        <li><a href="">Sobre Nós</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Nossos Projetos</a></li>
-                        <li><a href="">Nosso Time</a></li>
-                        <li><a href="">Clientes Felizes</a></li>
-                        <li><a href="">Preço</a></li>
-                        <li><a href="">Alguns Fatos</a></li>
-                        <li><a href="">Contate-nos</a></li>
+                        <li onclick="onClickScroll('default ligth')"><a>Sobre Nós</a></li>
+                        <li onclick="onClickScroll('default dark')"><a>Serviços</a></li>
+                        <li onclick="onClickScroll('project')"><a>Nossos Projetos</a></li>
+                        <li onclick="onClickScroll('bg-time')"><a>Nosso Time</a></li>
+                        <li onclick="onClickScroll('cliente')"><a>Clientes Felizes</a></li>
+                        <li onclick="onClickScroll('preco')"><a>Preço</a></li>
+                        <li onclick="onClickScroll('fatos')"><a>Alguns Fatos</a></li>
+                        <li onclick="onClickScroll('contato')"><a>Contate-nos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -62,11 +63,11 @@
             </div>
         </section>
 
-        <section>
-            <div class="default ligth">
+        <section >
+            <div class="default ligth" id="default ligth">
                 <div class="section_title">Sobre Nós</div>
                 <div class="section_desc">Quem nós somos?</div>
-                <div class="section_body">
+                <div class="section_body"  >
                     <div class="section_abouts">
                         <div class="section_about--left">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et malesuada tortor, eget rutrum libero. Phasellus scelerisque, libero eget ultricies dapibus, ante nibh fringilla massa, eget tincidunt urna nisl sit amet diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id leo non augue ullamcorper dictum eu pellentesque augue. Quisque eu lacus mollis, vestibulum sapien malesuada, convallis lorem. Nam molestie lorem at libero volutpat, eu elementum lectus dictum. Sed ac est imperdiet, euismod ipsum in, tempus ex.</p>
@@ -82,7 +83,7 @@
         </section>
 
         <section>
-            <div class="default dark">
+            <div class="default dark" id="default dark">
                 <div class="section_title">Serviços</div>
                 <div class="section_desc">Serviços que fornecemos</div>
                 <div class="section_body">
@@ -111,7 +112,7 @@
             </div>
         </section>
         <section>
-            <div class="default ligth">
+            <div class="default ligth" id="project">
                 <div class="section_title">Nossos Projetos</div>
                 <div class="section_desc">O que Criamos</div>
                 <div class="section_body">
@@ -246,7 +247,7 @@
         <section>
             <div class="default dark bg-time">
                 <div class="section_time-area">
-                    <div class="section_title">Nosso Time</div>
+                    <div class="section_title" id="bg-time">Nosso Time</div>
                     <div class="section_desc">Nossos Colaboradores</div>
                     <div class="section_body">
                         <div class="section_time">
@@ -304,8 +305,8 @@
         </section>
 
         <section>
-            <div class="default ligth">
-                <div class="section_title">Clientes Felizes</div>
+            <div class="default ligth" >
+                <div class="section_title" id="cliente">Clientes Felizes</div>
                 <div class="section_desc">comentários de clientes</div>
                 <div class="section_body">
                         <div class="section_coment">
@@ -342,7 +343,7 @@
         <section>
             <div class="default ligth">
                 <div class="section_time-area1">
-                    <div class="section_title">Serviços</div>
+                    <div class="section_title" id="preco">Serviços</div>
                     <div class="section_desc">Nossos Serviços</div>
                     <div class="section_body">
                         <div class="section_servicos">
@@ -444,7 +445,7 @@
         
         <section>
             <div class="default dark">
-                <div class="section_title">Alguns Fatos</div>
+                <div class="section_title" id="fatos">Alguns Fatos</div>
                 <div class="section_desc">Sobre nosso trabalho</div>
                 <div class="section_body">
                     <div class="section_fatos">
@@ -507,7 +508,7 @@
         <section>
             <div class="default ligth">
                 <div class="section_time-area1">
-                    <div class="section_title">Contate-nos</div>
+                    <div class="section_title" id="contato">Contate-nos</div>
                     <div class="section_desc">Nossa Agência localizada no Brasil</div>
                     <div class="section_body">
                         <div class="section_form">
